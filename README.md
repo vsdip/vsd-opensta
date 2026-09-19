@@ -1,27 +1,22 @@
-# vsd-opensta
+# OpenSTA SKY130 Codespace
 
-# OpenSTA Static Timing Analysis on Cloud
+A browser-based OpenSTA and SKY130 PDK environment for static timing analysis.
 
-This repository provides a ready-to-use GitHub Codespace for OpenSTA
-
-## Included Tools
+## Included
 
 - OpenSTA
-- CUDD 3.0.0
-- CMake
-- SWIG
-- Flex
-- Bison
-- Eigen
-- Tcl
-- fmt
+- SKY130A PDK
+- `sky130_fd_sc_hd` standard-cell library
 - Yosys
 - Icarus Verilog
 - GTKWave
 - XFCE desktop
-- noVNC browser desktop
+- noVNC browser access
 
-Official OpenSTA examples are available at:
+## Launch
+
+1. Open the repository on GitHub.
+2. Select:
 
 ```text
-/opt/OpenSTA/examples
+Code → Codespaces → Create codespace on main
