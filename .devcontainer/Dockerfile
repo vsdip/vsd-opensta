@@ -19,7 +19,7 @@ RUN groupadd --gid ${USER_GID} ${USERNAME} \
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
        autoconf automake autotools-dev bison build-essential ca-certificates \
-       cmake curl flex gawk gdb git libeigen3-dev libfmt-dev libgtest-dev \
+       cmake curl flex libfl-dev gawk gdb git libeigen3-dev libfmt-dev libgtest-dev \
        make m4 ninja-build pkg-config swig tcl tcl-dev tcl-tclreadline \
        wget zlib1g-dev \
        xfce4 xfce4-terminal x11vnc xvfb novnc websockify supervisor dbus-x11 \
