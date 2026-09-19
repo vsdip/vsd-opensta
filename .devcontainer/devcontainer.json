@@ -16,6 +16,10 @@
   "overrideCommand": false,
   "remoteUser": "vscode",
   "containerEnv": {
-    "DISPLAY": ":1"
-  }
+    "DISPLAY": ":1",
+    "PDK_ROOT": "/home/vscode/.ciel",
+    "PDK": "sky130A",
+    "STD_CELL_LIBRARY": "sky130_fd_sc_hd"
+  },
+  "postCreateCommand": "bash .devcontainer/setup.sh"
 }
