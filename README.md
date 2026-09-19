@@ -2,7 +2,7 @@
 
 # OpenSTA Static Timing Analysis on Cloud
 
-This repository provides a ready-to-use GitHub Codespace for OpenSTA, following the same browser-based setup used by `vsdip/vsd-rtl`.
+This repository provides a ready-to-use GitHub Codespace for OpenSTA
 
 ## Included Tools
 
