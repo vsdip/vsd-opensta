@@ -1,5 +1,5 @@
 {
-  "name": "OpenSTA Static Timing Analysis Cloud Lab",
+  "name": "OpenSTA SKY130 Static Timing Analysis Lab",
   "build": {
     "dockerfile": "Dockerfile",
     "args": {
