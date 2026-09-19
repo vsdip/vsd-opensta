@@ -16,17 +16,22 @@ RUN groupadd --gid ${USER_GID} ${USERNAME} \
     && echo "${USERNAME} ALL=(ALL) NOPASSWD:ALL" > /etc/sudoers.d/${USERNAME} \
     && chmod 0440 /etc/sudoers.d/${USERNAME}
 
+
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
        autoconf automake autotools-dev bison build-essential ca-certificates \
-       cmake curl flex libfl-dev gawk gdb git libeigen3-dev libfmt-dev libgtest-dev \
-       make m4 ninja-build pkg-config swig tcl tcl-dev tcl-tclreadline \
+       cmake curl flex libfl-dev gawk gdb git \
+       libeigen3-dev libfmt-dev libgtest-dev \
+       make m4 ninja-build pkg-config swig \
+       tcl tcl-dev tcl-tclreadline \
+       python3 python3-pip python3-venv python3.10-venv rsync \
        wget zlib1g-dev \
-       xfce4 xfce4-terminal x11vnc xvfb novnc websockify supervisor dbus-x11 \
+       xfce4 xfce4-terminal x11vnc xvfb novnc websockify \
+       supervisor dbus-x11 \
        yosys iverilog gtkwave \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
-
+    
 # Build CUDD 3.0.0
 RUN wget -q https://raw.githubusercontent.com/davidkebo/cudd/main/cudd_versions/cudd-3.0.0.tar.gz \
     && tar -xzf cudd-3.0.0.tar.gz \
