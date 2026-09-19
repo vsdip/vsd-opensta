@@ -1,0 +1,21 @@
+{
+  "name": "OpenSTA Static Timing Analysis Cloud Lab",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "args": {
+      "OPENSTA_REF": "master"
+    }
+  },
+  "forwardPorts": [6080],
+  "portsAttributes": {
+    "6080": {
+      "label": "noVNC Desktop",
+      "onAutoForward": "openBrowser"
+    }
+  },
+  "overrideCommand": false,
+  "remoteUser": "vscode",
+  "containerEnv": {
+    "DISPLAY": ":1"
+  }
+}
